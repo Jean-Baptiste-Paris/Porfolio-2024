@@ -1,5 +1,7 @@
-import './App.css'
+import './Home.css'
 
-export default function App() {
+function Home() {
   return <h1 className="rotate text-3xl font-bold">Hello world!</h1>
 }
+
+export default Home
