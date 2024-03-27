@@ -1,11 +1,4 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-@keyframes logo-spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
@@ -16,6 +9,6 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .rotate {
-    animation: logo-spin infinite 10s linear;
+    animation: spin infinite 10s linear;
   }
 }
