@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
-      <main>
+      <main className="max-w-screen-xl px-8">
         <Router />
       </main>
     </BrowserRouter>

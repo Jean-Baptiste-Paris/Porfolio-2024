@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.source-sans-extralight {
+  font-family: 'Source Sans 3', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.source-sans-normal {
+  font-family: 'Source Sans 3', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.source-sans-bold {
+  font-family: 'Source Sans 3', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.source-sans-extrabold {
+  font-family: 'Source Sans 3', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.oxygen-light {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.oxygen-regular {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oxygen-bold {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background: rgb(181, 174, 238);
+  background: radial-gradient(
+    circle,
+    rgba(181, 174, 238, 1) 0%,
+    rgba(255, 255, 255, 1) 80%
+  );
+}
