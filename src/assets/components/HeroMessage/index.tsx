@@ -1,4 +1,4 @@
-function Hero({
+function HeroMessage({
   mainMessage,
   subMessage,
   children,
@@ -22,4 +22,4 @@ function Hero({
   )
 }
 
-export default Hero
+export default HeroMessage
