@@ -3,55 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: 'Source Sans 3', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.source-sans-extralight {
-  font-family: 'Source Sans 3', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.source-sans-normal {
-  font-family: 'Source Sans 3', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.source-sans-bold {
-  font-family: 'Source Sans 3', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.source-sans-extrabold {
-  font-family: 'Source Sans 3', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.oxygen-light {
-  font-family: 'Oxygen', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.oxygen-regular {
-  font-family: 'Oxygen', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.oxygen-bold {
-  font-family: 'Oxygen', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-size: 16px;
 }
 
 body {
@@ -61,4 +13,21 @@ body {
     rgba(181, 174, 238, 1) 0%,
     rgba(255, 255, 255, 1) 80%
   );
+}
+
+.scroll-test {
+  position: fixed;
+  top: 0;
+  height: 10px;
+  background-color: blueviolet;
+  width: 100%;
+  scale: 0 1;
+  animation: scroll-color linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-color {
+  to {
+    scale: 1 1;
+  }
 }

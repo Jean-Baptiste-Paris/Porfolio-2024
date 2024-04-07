@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <header className="w-100 p-8 flex justify-between items-center">
+    <header className="w-full p-8 flex justify-between items-center">
       <Link to="/">
-        <h1 className="text-2xl source-sans-bold">
+        <h1 className="text-2xl font-bold">
           Jean-Baptiste Paris
-          <span className="ml-2 pl-2 text-xl source-sans-extralight border-l border-neutral-500">
+          <span className="ml-2 pl-2 text-xl font-thin border-l border-neutral-500">
             Portfolio
           </span>
         </h1>
