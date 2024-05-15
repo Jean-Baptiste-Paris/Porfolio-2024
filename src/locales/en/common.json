@@ -1,0 +1,12 @@
+{
+  "header": {
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "works": "Works",
+    "contact": "Contact"
+  },
+  "footer": {
+    "by": "made whith care by",
+    "source": "source code available on my GitHub"
+  }
+}

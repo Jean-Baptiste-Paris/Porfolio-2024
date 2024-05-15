@@ -1,0 +1,12 @@
+{
+  "header": {
+    "portfolio": "Portfolio",
+    "skills": "Compétences",
+    "works": "Travaux",
+    "contact": "Contact"
+  },
+  "footer": {
+    "by": "réalisé avec soin par",
+    "source": "code source du projet disponible sur mon GitHub"
+  }
+}
