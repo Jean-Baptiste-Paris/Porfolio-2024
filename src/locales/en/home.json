@@ -4,5 +4,12 @@
     "highlight": "web developer",
     "welcome": "Welcome to my portfolio.",
     "subMessage": "I focus on developing interactive and user-friendly websites, as well as improving my skills in backend development. Explore my work and get in touch !"
+  },
+  "stats": {
+    "title": "Live GitHub statistics",
+    "repos": "GitHub repositories",
+    "commits": "Total commits including...",
+    "commitsLastSixtyDays": "Commits the last 60 days",
+    "signedUp": "Signed up since"
   }
 }

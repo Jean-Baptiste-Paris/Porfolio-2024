@@ -27,10 +27,10 @@ function LanguageSelector({
       defaultValue={i18n.language}
     >
       <option className={optionClasses} value="en">
-        🇬🇧&emsp;en
+        🇬🇧&emsp;EN
       </option>
       <option className={optionClasses} value="fr">
-        🇫🇷&emsp;fr
+        🇫🇷&emsp;FR
       </option>
     </select>
   )

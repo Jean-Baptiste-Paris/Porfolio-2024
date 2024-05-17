@@ -15,7 +15,7 @@ function Header() {
             </span>
           </h1>
         </Link>
-        <nav className="flex space-x-8">
+        <nav className="flex space-x-8 text-md">
           <a href="/#skills">{t('header.skills')}</a>
           <a href="/#work">{t('header.works')}</a>
           <a href="/#contact" className="text-white bg-slate-800 px-2 rounded">
@@ -23,7 +23,7 @@ function Header() {
           </a>
           <LanguageSelector
             optionClasses=""
-            className="rounded pl-1 drop-shadow-md"
+            className="rounded pl-2 border border-slate-500 bg-transparent backdrop-blur-2xl drop-shadow-sm text-sm font-light "
           ></LanguageSelector>
         </nav>
       </div>
