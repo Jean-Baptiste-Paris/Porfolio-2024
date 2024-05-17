@@ -1,11 +1,13 @@
 import HeroMessage from '../../assets/components/HeroMessage'
 import HighlightSpan from '../../assets/components/HiglightSpan'
+import GitHubStats from '../../assets/components/GithubStats'
 import Section from '../../layout/Section'
 import { useTranslation } from 'react-i18next'
 
 function Home() {
   const { t } = useTranslation('home')
 
+  //Hero Section
   const heroMainMessage = (
     <HighlightSpan
       tagType="div"
@@ -16,7 +18,6 @@ function Home() {
       {t('hero.mainMessage')}
     </HighlightSpan>
   )
-
   const heroSubMessage = (
     <div className="text-base">
       {t('hero.welcome')}
@@ -25,6 +26,9 @@ function Home() {
     </div>
   )
   const heroImage = '/pictures/mymind-tZCrFpSNiIQ-unsplash.jpg'
+
+  //Stats Section
+
   return (
     <div>
       <Section>
@@ -38,6 +42,9 @@ function Home() {
           style={{ backgroundImage: `url(${heroImage})` }}
           className="z-auto w-full h-96 bg-cover bg-right-bottom rounded-lg bg-fixed drop-shadow-xl border border-gray-100 backdrop-blur-sm"
         ></div>
+      </Section>
+      <Section>
+        <GitHubStats />
       </Section>
       <Section>
         <h2 className="text-4xl font-bold">🙋🏻 A propos de moi</h2>
