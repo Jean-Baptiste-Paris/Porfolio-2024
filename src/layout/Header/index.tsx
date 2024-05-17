@@ -5,23 +5,25 @@ import LanguageSelector from '../../assets/components/LanguageSelector'
 function Header() {
   const { t } = useTranslation('common')
   return (
-    <header className="w-full p-4 flex justify-center sticky top-0 backdrop-blur-xl">
+    <header className="w-full p-4 flex justify-center sticky top-0 backdrop-blur-xl sticky:bg-white/30">
       <div className="w-full max-w-screen-xl px-8 flex items-center justify-between">
         <Link to="/">
           <h1 className="text-2xl font-bold">
             Jean-Baptiste Paris
-            <span className="ml-2 pl-2 text-xl font-thin border-l border-neutral-500">
+            <span className="ml-2 pl-2 text-xl font-thin border-l border-slate-500">
               {t('header.portfolio')}
             </span>
           </h1>
         </Link>
-        <nav className="flex space-x-4">
+        <nav className="flex space-x-8">
           <a href="/#skills">{t('header.skills')}</a>
           <a href="/#work">{t('header.works')}</a>
-          <a href="/#contact">{t('header.contact')}</a>
+          <a href="/#contact" className="text-white bg-slate-800 px-2 rounded">
+            {t('header.contact')}
+          </a>
           <LanguageSelector
             optionClasses=""
-            className="rounded pl-1 drop-shadow-lg"
+            className="rounded pl-1 drop-shadow-md"
           ></LanguageSelector>
         </nav>
       </div>

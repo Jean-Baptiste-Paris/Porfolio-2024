@@ -1,19 +1,22 @@
 import HeroMessage from '../../assets/components/HeroMessage'
 import Section from '../../layout/Section'
+import { useTranslation } from 'react-i18next'
 
 function Home() {
+  const { t } = useTranslation('home')
   const heroMainMessage = (
-    <div className="text-6xl font-display font-bold ">
-      Salut !<br />
-      Je m'appelle Jean-Baptiste et je suis{' '}
-      <span className="bg-gradient-to-r from-violet-500 to-pink-400 bg-clip-text text-transparent">
-        développeur web
-      </span>
+    <div className="text-5xl font-display font-medium uppercase">
+      {t('hero.mainMessage')}
     </div>
   )
-  const heroSubMessage =
-    "Bienvenue sur mon portfolio ! J'éspère que vous prendrez plaisir à découvrir mon travail."
-  const heroImage = 'https://placehold.co/600x400'
+  const heroSubMessage = (
+    <div className="text-base">
+      {t('hero.welcome')}
+      <br />
+      {t('hero.subMessage')}
+    </div>
+  )
+  const heroImage = '/pictures/mymind-tZCrFpSNiIQ-unsplash.jpg'
   return (
     <div>
       <Section>
@@ -21,14 +24,12 @@ function Home() {
           <HeroMessage
             mainMessage={heroMainMessage}
             subMessage={heroSubMessage}
-          >
-            <div className="flex w-100 space-x-4">
-              <p className="border-2 border-purple-400 p-2">BOUTON 1</p>
-              <p className="border-2 border-black p-2">BOUTON 2</p>
-            </div>
-          </HeroMessage>
-          <img src={heroImage}></img>
+          ></HeroMessage>
         </div>
+        <div
+          style={{ backgroundImage: `url(${heroImage})` }}
+          className="z-auto w-full h-96 bg-cover bg-right-bottom rounded-lg bg-fixed drop-shadow-xl border border-gray-100 backdrop-blur-sm"
+        ></div>
       </Section>
       <Section>
         <h2 className="text-4xl font-bold">🙋🏻 A propos de moi</h2>

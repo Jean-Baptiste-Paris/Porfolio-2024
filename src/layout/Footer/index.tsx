@@ -7,7 +7,7 @@ function Footer() {
   const { t } = useTranslation('common')
 
   return (
-    <footer className="w-full p-4 flex flex-col items-center bg-neutral-800 text-white">
+    <footer className="w-full p-4 flex flex-col items-center bg-slate-800 text-white">
       <div className="space-x-2">
         <Link
           target="_blank"
