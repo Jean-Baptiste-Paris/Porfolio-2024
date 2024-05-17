@@ -5,7 +5,7 @@ import LanguageSelector from '../../assets/components/LanguageSelector'
 function Header() {
   const { t } = useTranslation('common')
   return (
-    <header className="w-full p-4 flex justify-center sticky top-0 backdrop-blur-xl sticky:bg-white/30">
+    <header className="w-full p-4 flex justify-center sticky top-0 backdrop-blur-xl sticky:bg-white/30 z-50">
       <div className="w-full max-w-screen-xl px-8 flex items-center justify-between">
         <Link to="/">
           <h1 className="text-2xl font-bold">

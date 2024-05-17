@@ -1,14 +1,22 @@
 import HeroMessage from '../../assets/components/HeroMessage'
+import HighlightSpan from '../../assets/components/HiglightSpan'
 import Section from '../../layout/Section'
 import { useTranslation } from 'react-i18next'
 
 function Home() {
   const { t } = useTranslation('home')
+
   const heroMainMessage = (
-    <div className="text-5xl font-display font-medium uppercase">
+    <HighlightSpan
+      tagType="div"
+      highlight={t('hero.highlight')}
+      classes="text-5xl font-display font-medium uppercase"
+      highlightClasses="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-fuchsia-500"
+    >
       {t('hero.mainMessage')}
-    </div>
+    </HighlightSpan>
   )
+
   const heroSubMessage = (
     <div className="text-base">
       {t('hero.welcome')}
